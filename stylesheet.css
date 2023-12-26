@@ -1,0 +1,81 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: hsl(47, 88%, 63%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.card-container {
+/*     perspective: 1000px; */
+    border-color: black;
+  }
+
+.card {
+    background: white;
+    margin:auto;
+    display:flex;
+    width: 400px;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.87);
+    overflow: hidden;
+}
+
+.card-content {
+    padding: 2ch;
+    text-align: left;
+    padding-left: 2vw;
+  }
+
+h1{
+    padding: auto;
+    text-align:start
+}
+
+h1:hover{
+    color: rgb(255, 187, 0);
+
+}
+
+.card-image {
+    width:100%; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50%;
+    padding-top:10%;
+    border-radius: 10px;
+    height: 0;
+    text-align: center;}
+
+.category{
+    margin:auto;
+    text-align: left;
+    font-weight: bold;
+    background-color: hsl(12, 88%, 59%);
+    display: inline-block;
+    padding:0.25em;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.date {
+    margin:auto;
+    padding-top: 1em;
+}
+
+/* .attribution{
+    align-items: end;
+} */
+
+@media (max-width: 600px) {
+    .card-content {
+        padding: 5px; /* smaller padding on mobile */
+    }
+    .title {
+        font-size: 18px; /* smaller font size on mobile */
+    }
+}
